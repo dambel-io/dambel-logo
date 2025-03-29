@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dambel - Logo</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .gradient-box {
+            width: 800px;
+            height: 800px;
+            background: linear-gradient(45deg, #000 20%, #67cb6c 80%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rounded-box {
+            border-radius: 100px;
+        }
+
+        .dumbbell {
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            width: 75%;
+            display: flex;
+        }
+
+        .dumbbell-element {
+            background-color: white;
+            border-radius: 35px;
+            margin-left: 5px;
+            margin-right: 5px;
+            display: flex;
+        }
+
+        .dumbbell-element-horizontal {
+            height: 55px;
+        }
+
+        .dumbbell-element-vertical {
+            width: 55px;
+        }
+
+        #settings {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="settings">
+        <input type="checkbox" id="rounded-box" checked /> Rounded box
+    </div>
+    <div id="logo" class="gradient-box rounded-box">
+        <div class="dumbbell">
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 30%;"></div>
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 60%;"></div>
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 100%;"></div>
+
+            <div class="dumbbell-element dumbbell-element-horizontal" style="width: 45%;"></div>
+
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 100%;"></div>
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 60%;"></div>
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 30%;"></div>
+        </div>
+    </div>
+
+    <script>
+        var logo = document.getElementById('logo');
+        var roundedBoxCheckbox = document.getElementById('rounded-box');
+        roundedBoxCheckbox.onchange = function () {
+            logo.classList.toggle('rounded-box');
+        }
+    </script>
+</body>
+</html>

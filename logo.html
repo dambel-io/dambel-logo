@@ -63,13 +63,27 @@
             position: fixed;
             top: 20px;
             left: 20px;
+            padding: 20px;
+            background-color: #343434;
+            border-radius: 10px;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div id="settings">
         <input type="checkbox" id="rounded-box" checked /> Rounded box
+        <br />
+        <h4>Brand Colors</h4>
+        <ul>
+            <li style="color: #00ff88;">Primary: #00ff88</li>
+            <li style="color: #ffea00;">Secondary: #ffea00</li>
+            <li style="font-weight: bold; background-color: #ededed; color: #664444;">Tertiary: #664444</li>
+            <li style="padding: 10px; color: #000; background-color: #ededed;">Light mode background: #ededed</li>
+            <li style="padding: 10px; color: #ededed; background-color: #343434;">Dark mode background: #343434</li>
+        </ul>
     </div>
+
     <div id="logo" class="gradient-box rounded-box">
         <div class="dumbbell">
             <div class="dumbbell-element dumbbell-element-vertical" style="height: 30%; background: linear-gradient(to left, #ecc, #fee);"></div>

@@ -17,7 +17,15 @@
         .gradient-box {
             width: 800px;
             height: 800px;
-            background: linear-gradient(70deg, #4d4d4d 20%, #67cb6c 80%);
+            background:
+                radial-gradient(circle at top left, #ffff99, transparent),
+                radial-gradient(circle at bottom right, #99ff99, transparent),
+                linear-gradient(135deg, #ffea00, #00ff88);
+            background:
+                radial-gradient(circle at top left, #99ff99, transparent),
+                radial-gradient(circle at bottom right, #ffff99, transparent),
+                linear-gradient(135deg, #00ff88, #ffea00);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,13 +38,13 @@
         .dumbbell {
             justify-content: center;
             align-items: center;
-            height: 50%;
+            height: 60%;
             width: 75%;
             display: flex;
         }
 
         .dumbbell-element {
-            background-color: rgb(231, 231, 231);
+            background-color: black;
             border-radius: 35px;
             margin-left: 5px;
             margin-right: 5px;
@@ -44,11 +52,11 @@
         }
 
         .dumbbell-element-horizontal {
-            height: 55px;
+            height: 60px;
         }
 
         .dumbbell-element-vertical {
-            width: 55px;
+            width: 80px;
         }
 
         #settings {
@@ -64,15 +72,15 @@
     </div>
     <div id="logo" class="gradient-box rounded-box">
         <div class="dumbbell">
-            <div class="dumbbell-element dumbbell-element-vertical" style="height: 30%;"></div>
-            <div class="dumbbell-element dumbbell-element-vertical" style="height: 60%;"></div>
-            <div class="dumbbell-element dumbbell-element-vertical" style="height: 100%;"></div>
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 30%; background: linear-gradient(to left, #ecc, #fee);"></div>
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 60%; background: linear-gradient(to left, #caa, #ecc);"></div>
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 100%; background: linear-gradient(to left, #a88, #caa);"></div>
 
-            <div class="dumbbell-element dumbbell-element-horizontal" style="width: 45%;"></div>
+            <div class="dumbbell-element dumbbell-element-horizontal" style="width: 45%; background: linear-gradient(to left, #866, #a88);"></div>
 
-            <div class="dumbbell-element dumbbell-element-vertical" style="height: 100%;"></div>
-            <div class="dumbbell-element dumbbell-element-vertical" style="height: 60%;"></div>
-            <div class="dumbbell-element dumbbell-element-vertical" style="height: 30%;"></div>
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 100%; background: linear-gradient(to left, #644, #866);"></div>
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 60%; background: linear-gradient(to left, #422, #644);"></div>
+            <div class="dumbbell-element dumbbell-element-vertical" style="height: 30%; background: linear-gradient(to left, #000, #422);"></div>
         </div>
     </div>
 

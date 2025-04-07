@@ -3,13 +3,14 @@ from PIL import Image
 needed_sizes = [
     [1600, 'The biggest version available'],
     [1024, 'High resolution for website headers, print, or large displays'],
-    [512, 'For use in favicons and app stores (e.g., Apple App Store, Google Play Store)'],
+    [512, 'For use in app stores (e.g., Apple App Store, Google Play Store)'],
     [400, 'Medium size for social media profile images (Facebook, Twitter, etc.)'],
     [300, 'Medium-sized logo for email signatures or smaller sections of website'],
     [180, 'Icons for mobile apps or small website icons'],
     [120, 'Smaller app icons (used on mobile or desktop apps)'],
     [60, 'Favicons or small logo images on social media profiles'],
     [30, 'Very small logo for favicon, small icons, or toolbar logos'],
+    [16, 'Best for favicon'],
 ]
 
 readme_str = ''

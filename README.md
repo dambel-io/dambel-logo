@@ -51,7 +51,7 @@ High resolution for website headers, print, or large displays
 ![Main Dambel Logo](files/1024x1024.png)
 
 ### 512x512
-For use in favicons and app stores (e.g., Apple App Store, Google Play Store)
+For use in app stores (e.g., Apple App Store, Google Play Store)
 
 ![Main Dambel Logo](files/512x512.png)
 
@@ -84,4 +84,9 @@ Favicons or small logo images on social media profiles
 Very small logo for favicon, small icons, or toolbar logos
 
 ![Main Dambel Logo](files/30x30.png)
+
+### 16x16
+Best for favicon
+
+![Main Dambel Logo](files/16x16.png)
 

@@ -32,7 +32,8 @@ We generate the final by combining these assets automatically using a **Python s
 
 
 ### full_gradient
-![Full_Gradient Logo](output/full_gradient.png)
+<img src="output/full_gradient.png" style="width: 50%" />
+
 - [full_gradient.svg](output/full_gradient.svg)
 - [full_gradient.png](output/full_gradient.png)
 - [full_gradient_1600x1600.png](output/full_gradient_1600x1600.png)
@@ -47,7 +48,8 @@ We generate the final by combining these assets automatically using a **Python s
 - [full_gradient_16x16.png](output/full_gradient_16x16.png)
 
 ### full_gradient_white
-![Full_Gradient_White Logo](output/full_gradient_white.png)
+<img src="output/full_gradient_white.png" style="width: 50%" />
+
 - [full_gradient_white.svg](output/full_gradient_white.svg)
 - [full_gradient_white.png](output/full_gradient_white.png)
 - [full_gradient_white_1600x1600.png](output/full_gradient_white_1600x1600.png)
@@ -62,7 +64,8 @@ We generate the final by combining these assets automatically using a **Python s
 - [full_gradient_white_16x16.png](output/full_gradient_white_16x16.png)
 
 ### full_dark
-![Full_Dark Logo](output/full_dark.png)
+<img src="output/full_dark.png" style="width: 50%" />
+
 - [full_dark.svg](output/full_dark.svg)
 - [full_dark.png](output/full_dark.png)
 - [full_dark_1600x1600.png](output/full_dark_1600x1600.png)
@@ -77,7 +80,8 @@ We generate the final by combining these assets automatically using a **Python s
 - [full_dark_16x16.png](output/full_dark_16x16.png)
 
 ### full_dark_white
-![Full_Dark_White Logo](output/full_dark_white.png)
+<img src="output/full_dark_white.png" style="width: 50%" />
+
 - [full_dark_white.svg](output/full_dark_white.svg)
 - [full_dark_white.png](output/full_dark_white.png)
 - [full_dark_white_1600x1600.png](output/full_dark_white_1600x1600.png)
@@ -92,7 +96,8 @@ We generate the final by combining these assets automatically using a **Python s
 - [full_dark_white_16x16.png](output/full_dark_white_16x16.png)
 
 ### dumbbell_gradient
-![Dumbbell_Gradient Logo](output/dumbbell_gradient.png)
+<img src="output/dumbbell_gradient.png" style="width: 50%" />
+
 - [dumbbell_gradient.svg](output/dumbbell_gradient.svg)
 - [dumbbell_gradient.png](output/dumbbell_gradient.png)
 - [dumbbell_gradient_1600x1600.png](output/dumbbell_gradient_1600x1600.png)
@@ -107,7 +112,8 @@ We generate the final by combining these assets automatically using a **Python s
 - [dumbbell_gradient_16x16.png](output/dumbbell_gradient_16x16.png)
 
 ### dumbbell_dark
-![Dumbbell_Dark Logo](output/dumbbell_dark.png)
+<img src="output/dumbbell_dark.png" style="width: 50%" />
+
 - [dumbbell_dark.svg](output/dumbbell_dark.svg)
 - [dumbbell_dark.png](output/dumbbell_dark.png)
 - [dumbbell_dark_1600x1600.png](output/dumbbell_dark_1600x1600.png)
@@ -122,7 +128,8 @@ We generate the final by combining these assets automatically using a **Python s
 - [dumbbell_dark_16x16.png](output/dumbbell_dark_16x16.png)
 
 ### dumbbell_white
-![Dumbbell_White Logo](output/dumbbell_white.png)
+<img src="output/dumbbell_white.png" style="width: 50%" />
+
 - [dumbbell_white.svg](output/dumbbell_white.svg)
 - [dumbbell_white.png](output/dumbbell_white.png)
 - [dumbbell_white_1600x1600.png](output/dumbbell_white_1600x1600.png)
@@ -137,7 +144,8 @@ We generate the final by combining these assets automatically using a **Python s
 - [dumbbell_white_16x16.png](output/dumbbell_white_16x16.png)
 
 ### circle_gradient
-![Circle_Gradient Logo](output/circle_gradient.png)
+<img src="output/circle_gradient.png" style="width: 50%" />
+
 - [circle_gradient.svg](output/circle_gradient.svg)
 - [circle_gradient.png](output/circle_gradient.png)
 - [circle_gradient_1600x1600.png](output/circle_gradient_1600x1600.png)
@@ -152,7 +160,8 @@ We generate the final by combining these assets automatically using a **Python s
 - [circle_gradient_16x16.png](output/circle_gradient_16x16.png)
 
 ### circle_gradient_white
-![Circle_Gradient_White Logo](output/circle_gradient_white.png)
+<img src="output/circle_gradient_white.png" style="width: 50%" />
+
 - [circle_gradient_white.svg](output/circle_gradient_white.svg)
 - [circle_gradient_white.png](output/circle_gradient_white.png)
 - [circle_gradient_white_1600x1600.png](output/circle_gradient_white_1600x1600.png)
@@ -167,7 +176,8 @@ We generate the final by combining these assets automatically using a **Python s
 - [circle_gradient_white_16x16.png](output/circle_gradient_white_16x16.png)
 
 ### circle_dark
-![Circle_Dark Logo](output/circle_dark.png)
+<img src="output/circle_dark.png" style="width: 50%" />
+
 - [circle_dark.svg](output/circle_dark.svg)
 - [circle_dark.png](output/circle_dark.png)
 - [circle_dark_1600x1600.png](output/circle_dark_1600x1600.png)
@@ -182,7 +192,8 @@ We generate the final by combining these assets automatically using a **Python s
 - [circle_dark_16x16.png](output/circle_dark_16x16.png)
 
 ### circle_dark_white
-![Circle_Dark_White Logo](output/circle_dark_white.png)
+<img src="output/circle_dark_white.png" style="width: 50%" />
+
 - [circle_dark_white.svg](output/circle_dark_white.svg)
 - [circle_dark_white.png](output/circle_dark_white.png)
 - [circle_dark_white_1600x1600.png](output/circle_dark_white_1600x1600.png)

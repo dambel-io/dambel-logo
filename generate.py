@@ -134,7 +134,7 @@ for variant in variants:
     generated_files_list.append(f'{variant}.png')
 
     readme_str += f'\n### {variant}\n'
-    readme_str += f'![{variant.title()} Logo](output/{variant}.png)\n'
+    readme_str += f'<img src="output/{variant}.png" style="width: 50%" />\n\n'
 
     with Image.open(f'output/{variant}.png') as img:
         for size in sizes:

@@ -1,39 +1,97 @@
+import cairosvg
 from PIL import Image
 
-variants = ['full']
-formats = ['png']
+base_content = open('assets/base.svg').read()
+background_content = open('assets/background.svg').read()
+dumbbell_content = open('assets/dumbbell.svg').read()
+
+colors = {
+    'gradient': 'url(#bgGradient)',
+    'dark': '#383838',
+    'transparent': '',
+}
+
+variants = {
+    'full_gradient': {
+        'background': True,
+        'background_color': 'gradient',
+        'dumbbell': True,
+        'dumbbell_color': 'dark',
+    },
+    'full_dark': {
+        'background': True,
+        'background_color': 'dark',
+        'dumbbell': True,
+        'dumbbell_color': 'gradient',
+    },
+    'dumbbell_gradient': {
+        'background': False,
+        'background_color': 'transparent',
+        'dumbbell': True,
+        'dumbbell_color': 'gradient',
+    },
+    'dumbbell_dark': {
+        'background': False,
+        'background_color': 'transparent',
+        'dumbbell': True,
+        'dumbbell_color': 'dark',
+    }
+}
+
 sizes = [
-    [1600, 'The biggest version available'],
-    [1024, 'High resolution for website headers, print, or large displays'],
-    [512, 'For use in app stores (e.g., Apple App Store, Google Play Store)'],
-    [400, 'Medium size for social media profile images (Facebook, Twitter, etc.)'],
-    [300, 'Medium-sized logo for email signatures or smaller sections of website'],
-    [180, 'Icons for mobile apps or small website icons'],
-    [120, 'Smaller app icons (used on mobile or desktop apps)'],
-    [60, 'Favicons or small logo images on social media profiles'],
-    [30, 'Very small logo for favicon, small icons, or toolbar logos'],
-    [16, 'Best for favicon'],
+    1600,
+    1024,
+    512,
+    400,
+    300,
+    180,
+    120,
+    60,
+    30,
+    16,
 ]
 
 readme_str = ''
+generated_files_list = []
 
-with Image.open('files/main.png') as img:
-    for variant in variants:
-        for format in formats:
-            for size in sizes:
-                size_str = str(size[0]) + 'x' + str(size[0])
-                img_resized = img.resize((size[0], size[0]))
-                fname = f'{variant}_{size_str}.{format}'
-                img_resized.save(f'files/{fname}')
+for variant in variants:
+    data = variants[variant]
+    content = base_content
 
-                readme_str += f'### {fname}\n'
-                readme_str += f'{size[1]}\n\n'
-                readme_str += f'![{variant.title()} Logo](files/{fname})\n\n'
+    if data['background']:
+        content = content.replace('<!-- Background -->', background_content)
+        content = content.replace('{background_color}', colors[data['background_color']])
+
+    if data['dumbbell']:
+        content = content.replace('<!-- Dumbbell -->', dumbbell_content)
+        content = content.replace('{dumbbell_color}', colors[data['dumbbell_color']])
+    
+    f = open(f'output/{variant}.svg', 'w')
+    f.write(content)
+    f.close()
+    generated_files_list.append(f'{variant}.svg')
+
+    cairosvg.svg2png(url=f'output/{variant}.svg', write_to=f'output/{variant}.png')
+    generated_files_list.append(f'{variant}.png')
+
+    readme_str += f'### {variant}\n'
+    readme_str += f'![{variant.title()} Logo](output/{variant}.png)\n\n'
+
+    with Image.open(f'output/{variant}.png') as img:
+        for size in sizes:
+            size_str = str(size) + 'x' + str(size)
+            img_resized = img.resize((size, size))
+            img_resized.save(f'output/{variant}_{size_str}.png')
+            generated_files_list.append(f'{variant}_{size_str}.png')
 
 with open('README.md', 'r') as readme_file:
     readme_content = readme_file.read()
 
-readme_content = readme_content.split('## Images')[0] + '## Images\n\n' + readme_str
+readme_content = readme_content.split('## Variants')[0] + '## Variants\n\n' + readme_str
+
+readme_content += '## Generated Files\n\n'
+for g in generated_files_list:
+    readme_content += f'- [{g}](output/{g})\n'
 
 with open('README.md', 'w') as readme_file:
     readme_file.write(readme_content)

@@ -1,6 +1,8 @@
 from PIL import Image
 
-needed_sizes = [
+variants = ['full']
+formats = ['png']
+sizes = [
     [1600, 'The biggest version available'],
     [1024, 'High resolution for website headers, print, or large displays'],
     [512, 'For use in app stores (e.g., Apple App Store, Google Play Store)'],
@@ -16,16 +18,17 @@ needed_sizes = [
 readme_str = ''
 
 with Image.open('files/main.png') as img:
-    for needed_size in needed_sizes:
-        size = needed_size[0]
-        img_resized = img.resize((size, size))
-        size_str = str(size) + 'x' + str(size)
-        
-        img_resized.save(f'files/{size_str}.png')
+    for variant in variants:
+        for format in formats:
+            for size in sizes:
+                size_str = str(size[0]) + 'x' + str(size[0])
+                img_resized = img.resize((size[0], size[0]))
+                fname = f'{variant}_{size_str}.{format}'
+                img_resized.save(f'files/{fname}')
 
-        readme_str += f'### {size_str}\n'
-        readme_str += f'{needed_size[1]}\n\n'
-        readme_str += f'![Main Dambel Logo](files/{size_str}.png)\n\n'
+                readme_str += f'### {fname}\n'
+                readme_str += f'{size[1]}\n\n'
+                readme_str += f'![{variant.title()} Logo](files/{fname})\n\n'
 
 with open('README.md', 'r') as readme_file:
     readme_content = readme_file.read()

@@ -36,53 +36,53 @@ To work with and generate different sizes of the Dambel logo, follow these steps
 
 ## Images
 
-### 1600x1600
+### full_1600x1600.png
 The biggest version available
 
-![Main Dambel Logo](files/1600x1600.png)
+![Full Logo](files/full_1600x1600.png)
 
-### 1024x1024
+### full_1024x1024.png
 High resolution for website headers, print, or large displays
 
-![Main Dambel Logo](files/1024x1024.png)
+![Full Logo](files/full_1024x1024.png)
 
-### 512x512
+### full_512x512.png
 For use in app stores (e.g., Apple App Store, Google Play Store)
 
-![Main Dambel Logo](files/512x512.png)
+![Full Logo](files/full_512x512.png)
 
-### 400x400
+### full_400x400.png
 Medium size for social media profile images (Facebook, Twitter, etc.)
 
-![Main Dambel Logo](files/400x400.png)
+![Full Logo](files/full_400x400.png)
 
-### 300x300
+### full_300x300.png
 Medium-sized logo for email signatures or smaller sections of website
 
-![Main Dambel Logo](files/300x300.png)
+![Full Logo](files/full_300x300.png)
 
-### 180x180
+### full_180x180.png
 Icons for mobile apps or small website icons
 
-![Main Dambel Logo](files/180x180.png)
+![Full Logo](files/full_180x180.png)
 
-### 120x120
+### full_120x120.png
 Smaller app icons (used on mobile or desktop apps)
 
-![Main Dambel Logo](files/120x120.png)
+![Full Logo](files/full_120x120.png)
 
-### 60x60
+### full_60x60.png
 Favicons or small logo images on social media profiles
 
-![Main Dambel Logo](files/60x60.png)
+![Full Logo](files/full_60x60.png)
 
-### 30x30
+### full_30x30.png
 Very small logo for favicon, small icons, or toolbar logos
 
-![Main Dambel Logo](files/30x30.png)
+![Full Logo](files/full_30x30.png)
 
-### 16x16
+### full_16x16.png
 Best for favicon
 
-![Main Dambel Logo](files/16x16.png)
+![Full Logo](files/full_16x16.png)
 

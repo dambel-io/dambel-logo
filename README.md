@@ -178,6 +178,69 @@ We generate the final by combining these assets automatically using a **Python s
 - [dumbbell_white_30x30.png](output/dumbbell_white_30x30.png)
 - [dumbbell_white_16x16.png](output/dumbbell_white_16x16.png)
 
+### dumbbell_gradient_tight
+<img src="output/dumbbell_gradient_tight.png" style="width: 50%" />
+
+- [dumbbell_gradient_tight.svg](output/dumbbell_gradient_tight.svg)
+- [dumbbell_gradient_tight.png](output/dumbbell_gradient_tight.png)
+- [dumbbell_gradient_tight_1600x1600.png](output/dumbbell_gradient_tight_1600x1600.png)
+- [dumbbell_gradient_tight_1024x1024.png](output/dumbbell_gradient_tight_1024x1024.png)
+- [dumbbell_gradient_tight_512x512.png](output/dumbbell_gradient_tight_512x512.png)
+- [dumbbell_gradient_tight_400x400.png](output/dumbbell_gradient_tight_400x400.png)
+- [dumbbell_gradient_tight_300x300.png](output/dumbbell_gradient_tight_300x300.png)
+- [dumbbell_gradient_tight_192x192.png](output/dumbbell_gradient_tight_192x192.png)
+- [dumbbell_gradient_tight_180x180.png](output/dumbbell_gradient_tight_180x180.png)
+- [dumbbell_gradient_tight_144x144.png](output/dumbbell_gradient_tight_144x144.png)
+- [dumbbell_gradient_tight_120x120.png](output/dumbbell_gradient_tight_120x120.png)
+- [dumbbell_gradient_tight_96x96.png](output/dumbbell_gradient_tight_96x96.png)
+- [dumbbell_gradient_tight_72x72.png](output/dumbbell_gradient_tight_72x72.png)
+- [dumbbell_gradient_tight_60x60.png](output/dumbbell_gradient_tight_60x60.png)
+- [dumbbell_gradient_tight_48x48.png](output/dumbbell_gradient_tight_48x48.png)
+- [dumbbell_gradient_tight_30x30.png](output/dumbbell_gradient_tight_30x30.png)
+- [dumbbell_gradient_tight_16x16.png](output/dumbbell_gradient_tight_16x16.png)
+
+### dumbbell_dark_tight
+<img src="output/dumbbell_dark_tight.png" style="width: 50%" />
+
+- [dumbbell_dark_tight.svg](output/dumbbell_dark_tight.svg)
+- [dumbbell_dark_tight.png](output/dumbbell_dark_tight.png)
+- [dumbbell_dark_tight_1600x1600.png](output/dumbbell_dark_tight_1600x1600.png)
+- [dumbbell_dark_tight_1024x1024.png](output/dumbbell_dark_tight_1024x1024.png)
+- [dumbbell_dark_tight_512x512.png](output/dumbbell_dark_tight_512x512.png)
+- [dumbbell_dark_tight_400x400.png](output/dumbbell_dark_tight_400x400.png)
+- [dumbbell_dark_tight_300x300.png](output/dumbbell_dark_tight_300x300.png)
+- [dumbbell_dark_tight_192x192.png](output/dumbbell_dark_tight_192x192.png)
+- [dumbbell_dark_tight_180x180.png](output/dumbbell_dark_tight_180x180.png)
+- [dumbbell_dark_tight_144x144.png](output/dumbbell_dark_tight_144x144.png)
+- [dumbbell_dark_tight_120x120.png](output/dumbbell_dark_tight_120x120.png)
+- [dumbbell_dark_tight_96x96.png](output/dumbbell_dark_tight_96x96.png)
+- [dumbbell_dark_tight_72x72.png](output/dumbbell_dark_tight_72x72.png)
+- [dumbbell_dark_tight_60x60.png](output/dumbbell_dark_tight_60x60.png)
+- [dumbbell_dark_tight_48x48.png](output/dumbbell_dark_tight_48x48.png)
+- [dumbbell_dark_tight_30x30.png](output/dumbbell_dark_tight_30x30.png)
+- [dumbbell_dark_tight_16x16.png](output/dumbbell_dark_tight_16x16.png)
+
+### dumbbell_white_tight
+<img src="output/dumbbell_white_tight.png" style="width: 50%" />
+
+- [dumbbell_white_tight.svg](output/dumbbell_white_tight.svg)
+- [dumbbell_white_tight.png](output/dumbbell_white_tight.png)
+- [dumbbell_white_tight_1600x1600.png](output/dumbbell_white_tight_1600x1600.png)
+- [dumbbell_white_tight_1024x1024.png](output/dumbbell_white_tight_1024x1024.png)
+- [dumbbell_white_tight_512x512.png](output/dumbbell_white_tight_512x512.png)
+- [dumbbell_white_tight_400x400.png](output/dumbbell_white_tight_400x400.png)
+- [dumbbell_white_tight_300x300.png](output/dumbbell_white_tight_300x300.png)
+- [dumbbell_white_tight_192x192.png](output/dumbbell_white_tight_192x192.png)
+- [dumbbell_white_tight_180x180.png](output/dumbbell_white_tight_180x180.png)
+- [dumbbell_white_tight_144x144.png](output/dumbbell_white_tight_144x144.png)
+- [dumbbell_white_tight_120x120.png](output/dumbbell_white_tight_120x120.png)
+- [dumbbell_white_tight_96x96.png](output/dumbbell_white_tight_96x96.png)
+- [dumbbell_white_tight_72x72.png](output/dumbbell_white_tight_72x72.png)
+- [dumbbell_white_tight_60x60.png](output/dumbbell_white_tight_60x60.png)
+- [dumbbell_white_tight_48x48.png](output/dumbbell_white_tight_48x48.png)
+- [dumbbell_white_tight_30x30.png](output/dumbbell_white_tight_30x30.png)
+- [dumbbell_white_tight_16x16.png](output/dumbbell_white_tight_16x16.png)
+
 ### circle_gradient
 <img src="output/circle_gradient.png" style="width: 50%" />
 

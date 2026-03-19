@@ -2,9 +2,11 @@ import cairosvg
 from PIL import Image
 
 base_content = open('assets/base.svg').read()
+base_tight_content = open('assets/base_tight.svg').read()
 background_content = open('assets/background.svg').read()
 circle_background_content = open('assets/circle.svg').read()
 dumbbell_content = open('assets/dumbbell.svg').read()
+dumbbell_tight_content = open('assets/dumbbell_tight.svg').read()
 
 colors = {
     'gradient': 'url(#bgGradient)',
@@ -63,6 +65,30 @@ variants = {
         'dumbbell_color': 'white',
         'circle': False,
     },
+    'dumbbell_gradient_tight': {
+        'background': False,
+        'background_color': 'transparent',
+        'dumbbell': True,
+        'dumbbell_color': 'gradient',
+        'circle': False,
+        'tight': True,
+    },
+    'dumbbell_dark_tight': {
+        'background': False,
+        'background_color': 'transparent',
+        'dumbbell': True,
+        'dumbbell_color': 'dark',
+        'circle': False,
+        'tight': True,
+    },
+    'dumbbell_white_tight': {
+        'background': False,
+        'background_color': 'transparent',
+        'dumbbell': True,
+        'dumbbell_color': 'white',
+        'circle': False,
+        'tight': True,
+    },
     'circle_gradient': {
         'background': True,
         'background_color': 'gradient',
@@ -116,7 +142,8 @@ readme_str = ''
 for variant in variants:
     generated_files_list = []
     data = variants[variant]
-    content = base_content
+    is_tight = data.get('tight', False)
+    content = base_tight_content if is_tight else base_content
 
     if data['background']:
         if data['circle']:
@@ -127,9 +154,10 @@ for variant in variants:
             content = content.replace('{background_color}', colors[data['background_color']])
 
     if data['dumbbell']:
-        content = content.replace('<!-- Dumbbell -->', dumbbell_content)
+        db_content = dumbbell_tight_content if is_tight else dumbbell_content
+        content = content.replace('<!-- Dumbbell -->', db_content)
         content = content.replace('{dumbbell_color}', colors[data['dumbbell_color']])
-    
+
     f = open(f'output/{variant}.svg', 'w')
     f.write(content)
     f.close()

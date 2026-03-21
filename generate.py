@@ -4,6 +4,7 @@ from PIL import Image
 base_content = open('assets/base.svg').read()
 base_tight_content = open('assets/base_tight.svg').read()
 background_content = open('assets/background.svg').read()
+rounded_content = open('assets/rounded.svg').read()
 circle_background_content = open('assets/circle.svg').read()
 dumbbell_content = open('assets/dumbbell.svg').read()
 dumbbell_tight_content = open('assets/dumbbell_tight.svg').read()
@@ -43,6 +44,38 @@ variants = {
         'dumbbell': True,
         'dumbbell_color': 'white',
         'circle': False,
+    },
+    'rounded_gradient': {
+        'background': True,
+        'background_color': 'gradient',
+        'dumbbell': True,
+        'dumbbell_color': 'dark',
+        'circle': False,
+        'rounded': True,
+    },
+    'rounded_gradient_white': {
+        'background': True,
+        'background_color': 'gradient',
+        'dumbbell': True,
+        'dumbbell_color': 'white',
+        'circle': False,
+        'rounded': True,
+    },
+    'rounded_dark': {
+        'background': True,
+        'background_color': 'dark',
+        'dumbbell': True,
+        'dumbbell_color': 'gradient',
+        'circle': False,
+        'rounded': True,
+    },
+    'rounded_dark_white': {
+        'background': True,
+        'background_color': 'dark',
+        'dumbbell': True,
+        'dumbbell_color': 'white',
+        'circle': False,
+        'rounded': True,
     },
     'dumbbell_gradient': {
         'background': False,
@@ -147,11 +180,13 @@ for variant in variants:
 
     if data['background']:
         if data['circle']:
-            content = content.replace('<!-- Background -->', circle_background_content)
-            content = content.replace('{background_color}', colors[data['background_color']])
+            bg = circle_background_content
+        elif data.get('rounded'):
+            bg = rounded_content
         else:
-            content = content.replace('<!-- Background -->', background_content)
-            content = content.replace('{background_color}', colors[data['background_color']])
+            bg = background_content
+        content = content.replace('<!-- Background -->', bg)
+        content = content.replace('{background_color}', colors[data['background_color']])
 
     if data['dumbbell']:
         db_content = dumbbell_tight_content if is_tight else dumbbell_content

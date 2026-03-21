@@ -115,6 +115,90 @@ We generate the final by combining these assets automatically using a **Python s
 - [full_dark_white_30x30.png](output/full_dark_white_30x30.png)
 - [full_dark_white_16x16.png](output/full_dark_white_16x16.png)
 
+### rounded_gradient
+<img src="output/rounded_gradient.png" style="width: 50%" />
+
+- [rounded_gradient.svg](output/rounded_gradient.svg)
+- [rounded_gradient.png](output/rounded_gradient.png)
+- [rounded_gradient_1600x1600.png](output/rounded_gradient_1600x1600.png)
+- [rounded_gradient_1024x1024.png](output/rounded_gradient_1024x1024.png)
+- [rounded_gradient_512x512.png](output/rounded_gradient_512x512.png)
+- [rounded_gradient_400x400.png](output/rounded_gradient_400x400.png)
+- [rounded_gradient_300x300.png](output/rounded_gradient_300x300.png)
+- [rounded_gradient_192x192.png](output/rounded_gradient_192x192.png)
+- [rounded_gradient_180x180.png](output/rounded_gradient_180x180.png)
+- [rounded_gradient_144x144.png](output/rounded_gradient_144x144.png)
+- [rounded_gradient_120x120.png](output/rounded_gradient_120x120.png)
+- [rounded_gradient_96x96.png](output/rounded_gradient_96x96.png)
+- [rounded_gradient_72x72.png](output/rounded_gradient_72x72.png)
+- [rounded_gradient_60x60.png](output/rounded_gradient_60x60.png)
+- [rounded_gradient_48x48.png](output/rounded_gradient_48x48.png)
+- [rounded_gradient_30x30.png](output/rounded_gradient_30x30.png)
+- [rounded_gradient_16x16.png](output/rounded_gradient_16x16.png)
+
+### rounded_gradient_white
+<img src="output/rounded_gradient_white.png" style="width: 50%" />
+
+- [rounded_gradient_white.svg](output/rounded_gradient_white.svg)
+- [rounded_gradient_white.png](output/rounded_gradient_white.png)
+- [rounded_gradient_white_1600x1600.png](output/rounded_gradient_white_1600x1600.png)
+- [rounded_gradient_white_1024x1024.png](output/rounded_gradient_white_1024x1024.png)
+- [rounded_gradient_white_512x512.png](output/rounded_gradient_white_512x512.png)
+- [rounded_gradient_white_400x400.png](output/rounded_gradient_white_400x400.png)
+- [rounded_gradient_white_300x300.png](output/rounded_gradient_white_300x300.png)
+- [rounded_gradient_white_192x192.png](output/rounded_gradient_white_192x192.png)
+- [rounded_gradient_white_180x180.png](output/rounded_gradient_white_180x180.png)
+- [rounded_gradient_white_144x144.png](output/rounded_gradient_white_144x144.png)
+- [rounded_gradient_white_120x120.png](output/rounded_gradient_white_120x120.png)
+- [rounded_gradient_white_96x96.png](output/rounded_gradient_white_96x96.png)
+- [rounded_gradient_white_72x72.png](output/rounded_gradient_white_72x72.png)
+- [rounded_gradient_white_60x60.png](output/rounded_gradient_white_60x60.png)
+- [rounded_gradient_white_48x48.png](output/rounded_gradient_white_48x48.png)
+- [rounded_gradient_white_30x30.png](output/rounded_gradient_white_30x30.png)
+- [rounded_gradient_white_16x16.png](output/rounded_gradient_white_16x16.png)
+
+### rounded_dark
+<img src="output/rounded_dark.png" style="width: 50%" />
+
+- [rounded_dark.svg](output/rounded_dark.svg)
+- [rounded_dark.png](output/rounded_dark.png)
+- [rounded_dark_1600x1600.png](output/rounded_dark_1600x1600.png)
+- [rounded_dark_1024x1024.png](output/rounded_dark_1024x1024.png)
+- [rounded_dark_512x512.png](output/rounded_dark_512x512.png)
+- [rounded_dark_400x400.png](output/rounded_dark_400x400.png)
+- [rounded_dark_300x300.png](output/rounded_dark_300x300.png)
+- [rounded_dark_192x192.png](output/rounded_dark_192x192.png)
+- [rounded_dark_180x180.png](output/rounded_dark_180x180.png)
+- [rounded_dark_144x144.png](output/rounded_dark_144x144.png)
+- [rounded_dark_120x120.png](output/rounded_dark_120x120.png)
+- [rounded_dark_96x96.png](output/rounded_dark_96x96.png)
+- [rounded_dark_72x72.png](output/rounded_dark_72x72.png)
+- [rounded_dark_60x60.png](output/rounded_dark_60x60.png)
+- [rounded_dark_48x48.png](output/rounded_dark_48x48.png)
+- [rounded_dark_30x30.png](output/rounded_dark_30x30.png)
+- [rounded_dark_16x16.png](output/rounded_dark_16x16.png)
+
+### rounded_dark_white
+<img src="output/rounded_dark_white.png" style="width: 50%" />
+
+- [rounded_dark_white.svg](output/rounded_dark_white.svg)
+- [rounded_dark_white.png](output/rounded_dark_white.png)
+- [rounded_dark_white_1600x1600.png](output/rounded_dark_white_1600x1600.png)
+- [rounded_dark_white_1024x1024.png](output/rounded_dark_white_1024x1024.png)
+- [rounded_dark_white_512x512.png](output/rounded_dark_white_512x512.png)
+- [rounded_dark_white_400x400.png](output/rounded_dark_white_400x400.png)
+- [rounded_dark_white_300x300.png](output/rounded_dark_white_300x300.png)
+- [rounded_dark_white_192x192.png](output/rounded_dark_white_192x192.png)
+- [rounded_dark_white_180x180.png](output/rounded_dark_white_180x180.png)
+- [rounded_dark_white_144x144.png](output/rounded_dark_white_144x144.png)
+- [rounded_dark_white_120x120.png](output/rounded_dark_white_120x120.png)
+- [rounded_dark_white_96x96.png](output/rounded_dark_white_96x96.png)
+- [rounded_dark_white_72x72.png](output/rounded_dark_white_72x72.png)
+- [rounded_dark_white_60x60.png](output/rounded_dark_white_60x60.png)
+- [rounded_dark_white_48x48.png](output/rounded_dark_white_48x48.png)
+- [rounded_dark_white_30x30.png](output/rounded_dark_white_30x30.png)
+- [rounded_dark_white_16x16.png](output/rounded_dark_white_16x16.png)
+
 ### dumbbell_gradient
 <img src="output/dumbbell_gradient.png" style="width: 50%" />
 

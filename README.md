@@ -1,8 +1,8 @@
 # Dambel - Logo
 This is the initial version of the **Dambel** logo.
 
-We have our assets a SVG files in [assets](assets/) directory.
-We generate the final by combining these assets automatically using a **Python script**.
+The source assets are SVG fragments in the [assets](assets/) directory.
+The final logo files are generated automatically by combining these fragments with a **Python script**.
 
 ## Usage
 

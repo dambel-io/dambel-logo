@@ -1,8 +1,6 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="1600.000000pt" height="1600.000000pt" viewBox="0 0 1600.000000 1600.000000"
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+ width="1600pt" height="1600pt" viewBox="0 0 1600 1600"
  preserveAspectRatio="xMidYMid meet">
     <defs>
         <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -12,6 +10,7 @@
     </defs>
 
     <circle cx="800" cy="800" r="800" fill="url(#bgGradient)" />
+
 
     <g transform="translate(0.000000,1600.000000) scale(0.100000,-0.100000)"
 fill="#383838" stroke="none">

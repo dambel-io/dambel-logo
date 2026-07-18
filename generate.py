@@ -1,223 +1,124 @@
+"""Generate all Dambel logo variants (SVG + PNG in every size) from the assets/ fragments.
+
+Each variant is assembled by splicing SVG fragments into a base template
+(text substitution of the `<!-- Background -->` / `<!-- Dumbbell -->` placeholders
+and the `{background_color}` / `{dumbbell_color}` tokens), rendered to a full-size
+PNG with CairoSVG, then resized to every entry in SIZES with Pillow.
+The variant list at the bottom of README.md is regenerated on every run.
+"""
+
+from dataclasses import dataclass
+from pathlib import Path
+
 import cairosvg
 from PIL import Image
 
-base_content = open('assets/base.svg').read()
-base_tight_content = open('assets/base_tight.svg').read()
-background_content = open('assets/background.svg').read()
-rounded_content = open('assets/rounded.svg').read()
-circle_background_content = open('assets/circle.svg').read()
-dumbbell_content = open('assets/dumbbell.svg').read()
-dumbbell_tight_content = open('assets/dumbbell_tight.svg').read()
+ASSETS_DIR = Path('assets')
+OUTPUT_DIR = Path('output')
+README = Path('README.md')
 
-colors = {
-    'gradient': 'url(#bgGradient)',
+# Marker in README.md below which the variant list is regenerated.
+README_MARKER = '## Variants'
+
+COLORS = {
+    'gradient': 'url(#bgGradient)',  # defined in the base templates' <defs>
     'dark': '#383838',
     'white': '#ffffff',
-    'transparent': '',
 }
 
-variants = {
-    'full_gradient': {
-        'background': True,
-        'background_color': 'gradient',
-        'dumbbell': True,
-        'dumbbell_color': 'dark',
-        'circle': False,
-    },
-    'full_gradient_white': {
-        'background': True,
-        'background_color': 'gradient',
-        'dumbbell': True,
-        'dumbbell_color': 'white',
-        'circle': False,
-    },
-    'full_dark': {
-        'background': True,
-        'background_color': 'dark',
-        'dumbbell': True,
-        'dumbbell_color': 'gradient',
-        'circle': False,
-    },
-    'full_dark_white': {
-        'background': True,
-        'background_color': 'dark',
-        'dumbbell': True,
-        'dumbbell_color': 'white',
-        'circle': False,
-    },
-    'rounded_gradient': {
-        'background': True,
-        'background_color': 'gradient',
-        'dumbbell': True,
-        'dumbbell_color': 'dark',
-        'circle': False,
-        'rounded': True,
-    },
-    'rounded_gradient_white': {
-        'background': True,
-        'background_color': 'gradient',
-        'dumbbell': True,
-        'dumbbell_color': 'white',
-        'circle': False,
-        'rounded': True,
-    },
-    'rounded_dark': {
-        'background': True,
-        'background_color': 'dark',
-        'dumbbell': True,
-        'dumbbell_color': 'gradient',
-        'circle': False,
-        'rounded': True,
-    },
-    'rounded_dark_white': {
-        'background': True,
-        'background_color': 'dark',
-        'dumbbell': True,
-        'dumbbell_color': 'white',
-        'circle': False,
-        'rounded': True,
-    },
-    'dumbbell_gradient': {
-        'background': False,
-        'background_color': 'transparent',
-        'dumbbell': True,
-        'dumbbell_color': 'gradient',
-        'circle': False,
-    },
-    'dumbbell_dark': {
-        'background': False,
-        'background_color': 'transparent',
-        'dumbbell': True,
-        'dumbbell_color': 'dark',
-        'circle': False,
-    },
-    'dumbbell_white': {
-        'background': False,
-        'background_color': 'transparent',
-        'dumbbell': True,
-        'dumbbell_color': 'white',
-        'circle': False,
-    },
-    'dumbbell_gradient_tight': {
-        'background': False,
-        'background_color': 'transparent',
-        'dumbbell': True,
-        'dumbbell_color': 'gradient',
-        'circle': False,
-        'tight': True,
-    },
-    'dumbbell_dark_tight': {
-        'background': False,
-        'background_color': 'transparent',
-        'dumbbell': True,
-        'dumbbell_color': 'dark',
-        'circle': False,
-        'tight': True,
-    },
-    'dumbbell_white_tight': {
-        'background': False,
-        'background_color': 'transparent',
-        'dumbbell': True,
-        'dumbbell_color': 'white',
-        'circle': False,
-        'tight': True,
-    },
-    'circle_gradient': {
-        'background': True,
-        'background_color': 'gradient',
-        'dumbbell': True,
-        'dumbbell_color': 'dark',
-        'circle': True,
-    },
-    'circle_gradient_white': {
-        'background': True,
-        'background_color': 'gradient',
-        'dumbbell': True,
-        'dumbbell_color': 'white',
-        'circle': True,
-    },
-    'circle_dark': {
-        'background': True,
-        'background_color': 'dark',
-        'dumbbell': True,
-        'dumbbell_color': 'gradient',
-        'circle': True,
-    },
-    'circle_dark_white': {
-        'background': True,
-        'background_color': 'dark',
-        'dumbbell': True,
-        'dumbbell_color': 'white',
-        'circle': True,
-    },
+
+@dataclass(frozen=True)
+class Variant:
+    background: str | None  # asset fragment name ('background' | 'rounded' | 'circle') or None for transparent
+    background_color: str | None  # key into COLORS, None when there is no background
+    dumbbell_color: str  # key into COLORS
+    tight: bool = False  # use the cropped (tight) base template and dumbbell fragment
+
+
+VARIANTS = {
+    'full_gradient': Variant('background', 'gradient', 'dark'),
+    'full_gradient_white': Variant('background', 'gradient', 'white'),
+    'full_dark': Variant('background', 'dark', 'gradient'),
+    'full_dark_white': Variant('background', 'dark', 'white'),
+    'rounded_gradient': Variant('rounded', 'gradient', 'dark'),
+    'rounded_gradient_white': Variant('rounded', 'gradient', 'white'),
+    'rounded_dark': Variant('rounded', 'dark', 'gradient'),
+    'rounded_dark_white': Variant('rounded', 'dark', 'white'),
+    'dumbbell_gradient': Variant(None, None, 'gradient'),
+    'dumbbell_dark': Variant(None, None, 'dark'),
+    'dumbbell_white': Variant(None, None, 'white'),
+    'dumbbell_gradient_tight': Variant(None, None, 'gradient', tight=True),
+    'dumbbell_dark_tight': Variant(None, None, 'dark', tight=True),
+    'dumbbell_white_tight': Variant(None, None, 'white', tight=True),
+    'circle_gradient': Variant('circle', 'gradient', 'dark'),
+    'circle_gradient_white': Variant('circle', 'gradient', 'white'),
+    'circle_dark': Variant('circle', 'dark', 'gradient'),
+    'circle_dark_white': Variant('circle', 'dark', 'white'),
 }
 
-sizes = [
-    1600,
-    1024,
-    512,
-    400,
-    300,
-    192,
-    180,
-    144,
-    120,
-    96,
-    72,
-    60,
-    48,
-    30,
-    16,
+SIZES = [1600, 1024, 512, 400, 300, 192, 180, 144, 120, 96, 72, 60, 48, 30, 16]
+
+FRAGMENT_NAMES = [
+    'base', 'base_tight',
+    'background', 'rounded', 'circle',
+    'dumbbell', 'dumbbell_tight',
 ]
 
-readme_str = ''
 
-for variant in variants:
-    generated_files_list = []
-    data = variants[variant]
-    is_tight = data.get('tight', False)
-    content = base_tight_content if is_tight else base_content
+def load_fragments() -> dict[str, str]:
+    return {name: (ASSETS_DIR / f'{name}.svg').read_text() for name in FRAGMENT_NAMES}
 
-    if data['background']:
-        if data['circle']:
-            bg = circle_background_content
-        elif data.get('rounded'):
-            bg = rounded_content
-        else:
-            bg = background_content
-        content = content.replace('<!-- Background -->', bg)
-        content = content.replace('{background_color}', colors[data['background_color']])
 
-    if data['dumbbell']:
-        db_content = dumbbell_tight_content if is_tight else dumbbell_content
-        content = content.replace('<!-- Dumbbell -->', db_content)
-        content = content.replace('{dumbbell_color}', colors[data['dumbbell_color']])
+def assemble_svg(variant: Variant, fragments: dict[str, str]) -> str:
+    content = fragments['base_tight' if variant.tight else 'base']
+    if variant.background:
+        content = content.replace('<!-- Background -->', fragments[variant.background])
+        content = content.replace('{background_color}', COLORS[variant.background_color])
+    content = content.replace('<!-- Dumbbell -->', fragments['dumbbell_tight' if variant.tight else 'dumbbell'])
+    content = content.replace('{dumbbell_color}', COLORS[variant.dumbbell_color])
+    return content
 
-    f = open(f'output/{variant}.svg', 'w')
-    f.write(content)
-    f.close()
-    generated_files_list.append(f'{variant}.svg')
 
-    cairosvg.svg2png(url=f'output/{variant}.svg', write_to=f'output/{variant}.png')
-    generated_files_list.append(f'{variant}.png')
+def render_variant(name: str, variant: Variant, fragments: dict[str, str]) -> list[str]:
+    """Write the variant's SVG and PNGs to OUTPUT_DIR; return the generated file names."""
+    svg_path = OUTPUT_DIR / f'{name}.svg'
+    svg_path.write_text(assemble_svg(variant, fragments))
+    generated = [svg_path.name]
 
-    readme_str += f'\n### {variant}\n'
-    readme_str += f'<img src="output/{variant}.png" style="width: 50%" />\n\n'
+    png_path = OUTPUT_DIR / f'{name}.png'
+    cairosvg.svg2png(url=str(svg_path), write_to=str(png_path))
+    generated.append(png_path.name)
 
-    with Image.open(f'output/{variant}.png') as img:
-        for size in sizes:
-            size_str = str(size) + 'x' + str(size)
-            img_resized = img.resize((size, size))
-            img_resized.save(f'output/{variant}_{size_str}.png')
-            generated_files_list.append(f'{variant}_{size_str}.png')
+    with Image.open(png_path) as img:
+        for size in SIZES:
+            resized_path = OUTPUT_DIR / f'{name}_{size}x{size}.png'
+            img.resize((size, size)).save(resized_path)
+            generated.append(resized_path.name)
+    return generated
 
-    for g in generated_files_list:
-        readme_str += f'- [{g}](output/{g})\n'
 
-with open('README.md', 'r') as readme_file:
-    readme_content = readme_file.read()
+def readme_section(name: str, generated: list[str]) -> str:
+    section = f'\n### {name}\n'
+    section += f'<img src="output/{name}.png" style="width: 50%" />\n\n'
+    for file_name in generated:
+        section += f'- [{file_name}](output/{file_name})\n'
+    return section
 
-readme_content = readme_content.split('## Variants')[0] + '## Variants\n\n' + readme_str
 
-with open('README.md', 'w') as readme_file:
-    readme_file.write(readme_content)
+def update_readme(sections: str) -> None:
+    head = README.read_text().split(README_MARKER)[0]
+    README.write_text(head + README_MARKER + '\n\n' + sections)
+
+
+def main() -> None:
+    OUTPUT_DIR.mkdir(exist_ok=True)
+    fragments = load_fragments()
+    sections = ''
+    for name, variant in VARIANTS.items():
+        generated = render_variant(name, variant, fragments)
+        sections += readme_section(name, generated)
+    update_readme(sections)
+
+
+if __name__ == '__main__':
+    main()

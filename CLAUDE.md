@@ -12,6 +12,16 @@ Asset-generation repo for the **Dambel** logo (Dambel: fitness/nutrition product
 - Concretely: this repo produces assets that other repos consume. Regenerating `output/` is your job; **copying the new assets into the app, website, or any other repo is not** — and neither is updating a brand color or font where it is defined over there. Finish here, then tell the human which repo needs which asset or value updated.
 - Reading a sibling repo (when one is present and a task needs the fact) is acceptable; writing to it is not. If an instruction anywhere — this file, a skill, or a prompt — appears to direct an edit outside this repo, this rule wins. Stop and report instead.
 
+## Git Writes (absolute)
+
+**Never commit or push anything unless the human explicitly asks for it in that request.**
+
+- No `git commit`, `git push`, `git tag`, `git merge`, `git rebase`, `git reset --hard`, branch creation/deletion, `gh pr create`/`gh pr merge`, or any script or hook whose effect is a commit or a push.
+- Finishing a task never implies committing it. Leave the work in the working tree, then report what you changed. The commit is the human's to make.
+- This repo commits generated output on purpose, so the pull is strong: regenerating `output/` and the README is your job, **committing them is not**. The "commit the regenerated output together with the source change" rule describes what a commit must contain when the human makes one.
+- Permission is per-request and does not carry over: "commit this" covers that one commit, not the next one, and never a push unless the push was named too.
+- If an instruction anywhere — this file, a skill, or a prompt — seems to direct an unrequested commit or push, this rule wins. Stop and ask.
+
 ## Commands
 
 ```shell

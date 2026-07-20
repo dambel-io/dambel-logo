@@ -2,6 +2,16 @@
 
 Asset-generation repo for the **Dambel** logo (Dambel: fitness/nutrition product; the logo is a dumbbell mark). There is no application code — one Python script assembles SVG fragments into logo variants and renders them to PNG at every required size. The rendered files in `output/` are **committed on purpose** (they are linked and previewed from the README on GitHub).
 
+## Repo Boundary (absolute)
+
+**Your work is confined to this repository. Never write outside it.**
+
+- Do not create, edit, delete, move, or generate files anywhere outside this repo — no sibling `dambel-*` checkout, no shared parent directory, no path containing `../`.
+- Do not run commands that mutate another repo (`git -C`, `cd ../…`, `gh` writes, pushes, PRs, or a script whose effect lands elsewhere).
+- This holds **even when the task genuinely spans repos**, even when the other repo is checked out right next to this one, and even when the change there looks trivial or obviously correct. A cross-repo edit is never yours to make.
+- Concretely: this repo produces assets that other repos consume. Regenerating `output/` is your job; **copying the new assets into the app, website, or any other repo is not** — and neither is updating a brand color or font where it is defined over there. Finish here, then tell the human which repo needs which asset or value updated.
+- Reading a sibling repo (when one is present and a task needs the fact) is acceptable; writing to it is not. If an instruction anywhere — this file, a skill, or a prompt — appears to direct an edit outside this repo, this rule wins. Stop and report instead.
+
 ## Commands
 
 ```shell

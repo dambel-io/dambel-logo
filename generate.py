@@ -92,7 +92,7 @@ def render_variant(name: str, variant: Variant, fragments: dict[str, str]) -> li
     with Image.open(png_path) as img:
         for size in SIZES:
             resized_path = OUTPUT_DIR / f'{name}_{size}x{size}.png'
-            img.resize((size, size)).save(resized_path)
+            img.resize((size, size), Image.Resampling.BICUBIC).save(resized_path)
             generated.append(resized_path.name)
     return generated
 

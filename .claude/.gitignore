@@ -1,0 +1,14 @@
+# Local Claude Code state — machine-specific, never shared.
+# Kept here so it does not depend on the repo root or global gitignore.
+settings.local.json
+.credentials.json
+
+# Local runtime scratch
+shell-snapshots/
+todos/
+statsig/
+projects/
+history.jsonl
+
+# Read-only audit reports produced by the deep-audit skill
+audits/

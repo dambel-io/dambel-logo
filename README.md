@@ -52,6 +52,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [full_gradient_30x30.png](output/full_gradient_30x30.png)
 - [full_gradient_16x16.png](output/full_gradient_16x16.png)
 
+### full_gradient_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/full_gradient_loader.png" style="width: 50%" />
+
+- [full_gradient_loader.svg](output/full_gradient_loader.svg)
+- [full_gradient_loader.png](output/full_gradient_loader.png)
+
 ### full_gradient_white
 <img src="output/full_gradient_white.png" style="width: 50%" />
 
@@ -72,6 +79,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [full_gradient_white_48x48.png](output/full_gradient_white_48x48.png)
 - [full_gradient_white_30x30.png](output/full_gradient_white_30x30.png)
 - [full_gradient_white_16x16.png](output/full_gradient_white_16x16.png)
+
+### full_gradient_white_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/full_gradient_white_loader.png" style="width: 50%" />
+
+- [full_gradient_white_loader.svg](output/full_gradient_white_loader.svg)
+- [full_gradient_white_loader.png](output/full_gradient_white_loader.png)
 
 ### full_dark
 <img src="output/full_dark.png" style="width: 50%" />
@@ -94,6 +108,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [full_dark_30x30.png](output/full_dark_30x30.png)
 - [full_dark_16x16.png](output/full_dark_16x16.png)
 
+### full_dark_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/full_dark_loader.png" style="width: 50%" />
+
+- [full_dark_loader.svg](output/full_dark_loader.svg)
+- [full_dark_loader.png](output/full_dark_loader.png)
+
 ### full_dark_white
 <img src="output/full_dark_white.png" style="width: 50%" />
 
@@ -114,6 +135,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [full_dark_white_48x48.png](output/full_dark_white_48x48.png)
 - [full_dark_white_30x30.png](output/full_dark_white_30x30.png)
 - [full_dark_white_16x16.png](output/full_dark_white_16x16.png)
+
+### full_dark_white_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/full_dark_white_loader.png" style="width: 50%" />
+
+- [full_dark_white_loader.svg](output/full_dark_white_loader.svg)
+- [full_dark_white_loader.png](output/full_dark_white_loader.png)
 
 ### rounded_gradient
 <img src="output/rounded_gradient.png" style="width: 50%" />
@@ -136,6 +164,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [rounded_gradient_30x30.png](output/rounded_gradient_30x30.png)
 - [rounded_gradient_16x16.png](output/rounded_gradient_16x16.png)
 
+### rounded_gradient_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/rounded_gradient_loader.png" style="width: 50%" />
+
+- [rounded_gradient_loader.svg](output/rounded_gradient_loader.svg)
+- [rounded_gradient_loader.png](output/rounded_gradient_loader.png)
+
 ### rounded_gradient_white
 <img src="output/rounded_gradient_white.png" style="width: 50%" />
 
@@ -156,6 +191,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [rounded_gradient_white_48x48.png](output/rounded_gradient_white_48x48.png)
 - [rounded_gradient_white_30x30.png](output/rounded_gradient_white_30x30.png)
 - [rounded_gradient_white_16x16.png](output/rounded_gradient_white_16x16.png)
+
+### rounded_gradient_white_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/rounded_gradient_white_loader.png" style="width: 50%" />
+
+- [rounded_gradient_white_loader.svg](output/rounded_gradient_white_loader.svg)
+- [rounded_gradient_white_loader.png](output/rounded_gradient_white_loader.png)
 
 ### rounded_dark
 <img src="output/rounded_dark.png" style="width: 50%" />
@@ -178,6 +220,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [rounded_dark_30x30.png](output/rounded_dark_30x30.png)
 - [rounded_dark_16x16.png](output/rounded_dark_16x16.png)
 
+### rounded_dark_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/rounded_dark_loader.png" style="width: 50%" />
+
+- [rounded_dark_loader.svg](output/rounded_dark_loader.svg)
+- [rounded_dark_loader.png](output/rounded_dark_loader.png)
+
 ### rounded_dark_white
 <img src="output/rounded_dark_white.png" style="width: 50%" />
 
@@ -198,6 +247,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [rounded_dark_white_48x48.png](output/rounded_dark_white_48x48.png)
 - [rounded_dark_white_30x30.png](output/rounded_dark_white_30x30.png)
 - [rounded_dark_white_16x16.png](output/rounded_dark_white_16x16.png)
+
+### rounded_dark_white_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/rounded_dark_white_loader.png" style="width: 50%" />
+
+- [rounded_dark_white_loader.svg](output/rounded_dark_white_loader.svg)
+- [rounded_dark_white_loader.png](output/rounded_dark_white_loader.png)
 
 ### dumbbell_gradient
 <img src="output/dumbbell_gradient.png" style="width: 50%" />
@@ -220,6 +276,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [dumbbell_gradient_30x30.png](output/dumbbell_gradient_30x30.png)
 - [dumbbell_gradient_16x16.png](output/dumbbell_gradient_16x16.png)
 
+### dumbbell_gradient_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/dumbbell_gradient_loader.png" style="width: 50%" />
+
+- [dumbbell_gradient_loader.svg](output/dumbbell_gradient_loader.svg)
+- [dumbbell_gradient_loader.png](output/dumbbell_gradient_loader.png)
+
 ### dumbbell_dark
 <img src="output/dumbbell_dark.png" style="width: 50%" />
 
@@ -240,6 +303,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [dumbbell_dark_48x48.png](output/dumbbell_dark_48x48.png)
 - [dumbbell_dark_30x30.png](output/dumbbell_dark_30x30.png)
 - [dumbbell_dark_16x16.png](output/dumbbell_dark_16x16.png)
+
+### dumbbell_dark_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/dumbbell_dark_loader.png" style="width: 50%" />
+
+- [dumbbell_dark_loader.svg](output/dumbbell_dark_loader.svg)
+- [dumbbell_dark_loader.png](output/dumbbell_dark_loader.png)
 
 ### dumbbell_white
 <img src="output/dumbbell_white.png" style="width: 50%" />
@@ -262,6 +332,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [dumbbell_white_30x30.png](output/dumbbell_white_30x30.png)
 - [dumbbell_white_16x16.png](output/dumbbell_white_16x16.png)
 
+### dumbbell_white_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/dumbbell_white_loader.png" style="width: 50%" />
+
+- [dumbbell_white_loader.svg](output/dumbbell_white_loader.svg)
+- [dumbbell_white_loader.png](output/dumbbell_white_loader.png)
+
 ### dumbbell_gradient_tight
 <img src="output/dumbbell_gradient_tight.png" style="width: 50%" />
 
@@ -282,6 +359,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [dumbbell_gradient_tight_48x48.png](output/dumbbell_gradient_tight_48x48.png)
 - [dumbbell_gradient_tight_30x30.png](output/dumbbell_gradient_tight_30x30.png)
 - [dumbbell_gradient_tight_16x16.png](output/dumbbell_gradient_tight_16x16.png)
+
+### dumbbell_gradient_tight_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/dumbbell_gradient_tight_loader.png" style="width: 50%" />
+
+- [dumbbell_gradient_tight_loader.svg](output/dumbbell_gradient_tight_loader.svg)
+- [dumbbell_gradient_tight_loader.png](output/dumbbell_gradient_tight_loader.png)
 
 ### dumbbell_dark_tight
 <img src="output/dumbbell_dark_tight.png" style="width: 50%" />
@@ -304,6 +388,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [dumbbell_dark_tight_30x30.png](output/dumbbell_dark_tight_30x30.png)
 - [dumbbell_dark_tight_16x16.png](output/dumbbell_dark_tight_16x16.png)
 
+### dumbbell_dark_tight_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/dumbbell_dark_tight_loader.png" style="width: 50%" />
+
+- [dumbbell_dark_tight_loader.svg](output/dumbbell_dark_tight_loader.svg)
+- [dumbbell_dark_tight_loader.png](output/dumbbell_dark_tight_loader.png)
+
 ### dumbbell_white_tight
 <img src="output/dumbbell_white_tight.png" style="width: 50%" />
 
@@ -324,6 +415,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [dumbbell_white_tight_48x48.png](output/dumbbell_white_tight_48x48.png)
 - [dumbbell_white_tight_30x30.png](output/dumbbell_white_tight_30x30.png)
 - [dumbbell_white_tight_16x16.png](output/dumbbell_white_tight_16x16.png)
+
+### dumbbell_white_tight_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/dumbbell_white_tight_loader.png" style="width: 50%" />
+
+- [dumbbell_white_tight_loader.svg](output/dumbbell_white_tight_loader.svg)
+- [dumbbell_white_tight_loader.png](output/dumbbell_white_tight_loader.png)
 
 ### circle_gradient
 <img src="output/circle_gradient.png" style="width: 50%" />
@@ -346,6 +444,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [circle_gradient_30x30.png](output/circle_gradient_30x30.png)
 - [circle_gradient_16x16.png](output/circle_gradient_16x16.png)
 
+### circle_gradient_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/circle_gradient_loader.png" style="width: 50%" />
+
+- [circle_gradient_loader.svg](output/circle_gradient_loader.svg)
+- [circle_gradient_loader.png](output/circle_gradient_loader.png)
+
 ### circle_gradient_white
 <img src="output/circle_gradient_white.png" style="width: 50%" />
 
@@ -366,6 +471,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [circle_gradient_white_48x48.png](output/circle_gradient_white_48x48.png)
 - [circle_gradient_white_30x30.png](output/circle_gradient_white_30x30.png)
 - [circle_gradient_white_16x16.png](output/circle_gradient_white_16x16.png)
+
+### circle_gradient_white_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/circle_gradient_white_loader.png" style="width: 50%" />
+
+- [circle_gradient_white_loader.svg](output/circle_gradient_white_loader.svg)
+- [circle_gradient_white_loader.png](output/circle_gradient_white_loader.png)
 
 ### circle_dark
 <img src="output/circle_dark.png" style="width: 50%" />
@@ -388,6 +500,13 @@ The final logo files are generated automatically by combining these fragments wi
 - [circle_dark_30x30.png](output/circle_dark_30x30.png)
 - [circle_dark_16x16.png](output/circle_dark_16x16.png)
 
+### circle_dark_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/circle_dark_loader.png" style="width: 50%" />
+
+- [circle_dark_loader.svg](output/circle_dark_loader.svg)
+- [circle_dark_loader.png](output/circle_dark_loader.png)
+
 ### circle_dark_white
 <img src="output/circle_dark_white.png" style="width: 50%" />
 
@@ -408,3 +527,10 @@ The final logo files are generated automatically by combining these fragments wi
 - [circle_dark_white_48x48.png](output/circle_dark_white_48x48.png)
 - [circle_dark_white_30x30.png](output/circle_dark_white_30x30.png)
 - [circle_dark_white_16x16.png](output/circle_dark_white_16x16.png)
+
+### circle_dark_white_loader
+_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._
+<img src="output/circle_dark_white_loader.png" style="width: 50%" />
+
+- [circle_dark_white_loader.svg](output/circle_dark_white_loader.svg)
+- [circle_dark_white_loader.png](output/circle_dark_white_loader.png)

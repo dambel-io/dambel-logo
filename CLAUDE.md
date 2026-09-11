@@ -44,7 +44,9 @@ There are no tests. Verification = run `generate.py` and confirm the diff in `ou
 
 ### Variant model
 
-A `Variant` = background shape (`background`/`rounded`/`circle` fragment, or `None` for transparent) + background color + dumbbell color + optional `tight`. Naming convention: `<shape>_<bg-color>` uses the default contrasting dumbbell (dark on gradient, gradient on dark); the `_white` suffix forces a white dumbbell. `dumbbell_*` variants are mark-only (no background); `*_tight` uses the cropped template.
+A `Variant` = background shape (`background`/`rounded`/`circle` fragment, or `None` for transparent) + background color + dumbbell color + optional `tight` + optional `animated`. Naming convention: `<shape>_<bg-color>` uses the default contrasting dumbbell (dark on gradient, gradient on dark); the `_white` suffix forces a white dumbbell. `dumbbell_*` variants are mark-only (no background); `*_tight` uses the cropped template.
+
+Every variant also has an `animated` sibling, suffixed `_loader` (`full_gradient_loader`, `dumbbell_white_tight_loader`, …): same background/colors, but the dumbbell mark is spliced from `assets/dumbbell_loader.svg` instead of `dumbbell.svg`/`dumbbell_tight.svg` — a pumping animation (SMIL `<animateTransform>` on each weight-plate path, bar left static) for use as a loading indicator. These are **SVG-only**: `render_variant` skips the PNG resize loop for them, since a raster PNG can only freeze one frame of the animation (a `.png` preview at natural size is still written, for the README thumbnail).
 
 **Note the one place fragment name ≠ variant prefix:** the square background fragment is `assets/background.svg`, but its variants are named **`full_*`** (`full_gradient`, `full_dark`, …) — only `rounded` and `circle` reuse their fragment name as the prefix. So "full" in an output filename means the square/full-bleed background, and a grep for `background` will not find those variants.
 

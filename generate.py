@@ -102,14 +102,16 @@ def render_variant(name: str, variant: Variant, fragments: dict[str, str]) -> li
     svg_path.write_text(assemble_svg(variant, fragments))
     generated = [svg_path.name]
 
+    if variant.animated:
+        # SVG-only — a PNG can only capture one frozen frame of the pump animation.
+        png_path = OUTPUT_DIR / f'{name}.png'
+        if png_path.exists():
+            png_path.unlink()
+        return generated
+
     png_path = OUTPUT_DIR / f'{name}.png'
     cairosvg.svg2png(url=str(svg_path), write_to=str(png_path))
     generated.append(png_path.name)
-
-    if variant.animated:
-        # A PNG can only capture one frame, so a resized set would just be a frozen
-        # mid-pump snapshot at every size. The SVG (animated) + one PNG preview is enough.
-        return generated
 
     with Image.open(png_path) as img:
         for size in SIZES:
@@ -122,8 +124,10 @@ def render_variant(name: str, variant: Variant, fragments: dict[str, str]) -> li
 def readme_section(name: str, variant: Variant, generated: list[str]) -> str:
     section = f'\n### {name}\n'
     if variant.animated:
-        section += '_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._\n'
-    section += f'<img src="output/{name}.png" style="width: 50%" />\n\n'
+        section += '_Animated (pumping dumbbell) — open the SVG to see it move._\n'
+        section += f'<img src="output/{name}.svg" style="width: 50%" />\n\n'
+    else:
+        section += f'<img src="output/{name}.png" style="width: 50%" />\n\n'
     for file_name in generated:
         section += f'- [{file_name}](output/{file_name})\n'
     return section

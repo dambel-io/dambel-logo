@@ -33,6 +33,7 @@ class Variant:
     background_color: str | None  # key into COLORS, None when there is no background
     dumbbell_color: str  # key into COLORS
     tight: bool = False  # use the cropped (tight) base template and dumbbell fragment
+    animated: bool = False  # use the pumping dumbbell_loader fragment; SVG-only, no PNG size set
 
 
 VARIANTS = {
@@ -56,12 +57,24 @@ VARIANTS = {
     'circle_dark_white': Variant('circle', 'dark', 'white'),
 }
 
+# Every variant above also gets an animated `_loader` sibling: same background/colors,
+# but the dumbbell mark pumps (see dumbbell_loader.svg). SVG-only — a PNG can't animate.
+VARIANTS = {
+    variant_name: variant
+    for name, base_variant in list(VARIANTS.items())
+    for variant_name, variant in (
+        (name, base_variant),
+        (f'{name}_loader', Variant(base_variant.background, base_variant.background_color,
+                                    base_variant.dumbbell_color, tight=base_variant.tight, animated=True)),
+    )
+}
+
 SIZES = [1600, 1024, 512, 400, 300, 192, 180, 144, 120, 96, 72, 60, 48, 30, 16]
 
 FRAGMENT_NAMES = [
     'base', 'base_tight',
     'background', 'rounded', 'circle',
-    'dumbbell', 'dumbbell_tight',
+    'dumbbell', 'dumbbell_tight', 'dumbbell_loader',
 ]
 
 
@@ -74,7 +87,11 @@ def assemble_svg(variant: Variant, fragments: dict[str, str]) -> str:
     if variant.background:
         content = content.replace('<!-- Background -->', fragments[variant.background])
         content = content.replace('{background_color}', COLORS[variant.background_color])
-    content = content.replace('<!-- Dumbbell -->', fragments['dumbbell_tight' if variant.tight else 'dumbbell'])
+    if variant.animated:
+        dumbbell_fragment = 'dumbbell_loader'
+    else:
+        dumbbell_fragment = 'dumbbell_tight' if variant.tight else 'dumbbell'
+    content = content.replace('<!-- Dumbbell -->', fragments[dumbbell_fragment])
     content = content.replace('{dumbbell_color}', COLORS[variant.dumbbell_color])
     return content
 
@@ -89,6 +106,11 @@ def render_variant(name: str, variant: Variant, fragments: dict[str, str]) -> li
     cairosvg.svg2png(url=str(svg_path), write_to=str(png_path))
     generated.append(png_path.name)
 
+    if variant.animated:
+        # A PNG can only capture one frame, so a resized set would just be a frozen
+        # mid-pump snapshot at every size. The SVG (animated) + one PNG preview is enough.
+        return generated
+
     with Image.open(png_path) as img:
         for size in SIZES:
             resized_path = OUTPUT_DIR / f'{name}_{size}x{size}.png'
@@ -97,8 +119,10 @@ def render_variant(name: str, variant: Variant, fragments: dict[str, str]) -> li
     return generated
 
 
-def readme_section(name: str, generated: list[str]) -> str:
+def readme_section(name: str, variant: Variant, generated: list[str]) -> str:
     section = f'\n### {name}\n'
+    if variant.animated:
+        section += '_Animated (pumping dumbbell) — the PNG below is a single static frame; open the SVG to see it move._\n'
     section += f'<img src="output/{name}.png" style="width: 50%" />\n\n'
     for file_name in generated:
         section += f'- [{file_name}](output/{file_name})\n'
@@ -116,7 +140,7 @@ def main() -> None:
     sections = ''
     for name, variant in VARIANTS.items():
         generated = render_variant(name, variant, fragments)
-        sections += readme_section(name, generated)
+        sections += readme_section(name, variant, generated)
     update_readme(sections)
 
 

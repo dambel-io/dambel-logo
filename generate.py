@@ -58,7 +58,7 @@ VARIANTS = {
 }
 
 # Every variant above also gets an animated `_loader` sibling: same background/colors,
-# but the dumbbell mark pumps (see dumbbell_loader.svg). SVG-only — a PNG can't animate.
+# but the dumbbell mark pumps (see dumbbell_loader.svg). SVG-only: a PNG can't animate.
 VARIANTS = {
     variant_name: variant
     for name, base_variant in list(VARIANTS.items())
@@ -103,7 +103,7 @@ def render_variant(name: str, variant: Variant, fragments: dict[str, str]) -> li
     generated = [svg_path.name]
 
     if variant.animated:
-        # SVG-only — a PNG can only capture one frozen frame of the pump animation.
+        # SVG-only: a PNG can only capture one frozen frame of the pump animation.
         png_path = OUTPUT_DIR / f'{name}.png'
         if png_path.exists():
             png_path.unlink()
@@ -124,7 +124,7 @@ def render_variant(name: str, variant: Variant, fragments: dict[str, str]) -> li
 def readme_section(name: str, variant: Variant, generated: list[str]) -> str:
     section = f'\n### {name}\n'
     if variant.animated:
-        section += '_Animated (pumping dumbbell) — open the SVG to see it move._\n'
+        section += '_Animated (pumping dumbbell): open the SVG to see it move._\n'
         section += f'<img src="output/{name}.svg" style="width: 50%" />\n\n'
     else:
         section += f'<img src="output/{name}.png" style="width: 50%" />\n\n'

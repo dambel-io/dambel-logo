@@ -53,7 +53,7 @@ The final logo files are generated automatically by combining these fragments wi
 - [full_gradient_16x16.png](output/full_gradient_16x16.png)
 
 ### full_gradient_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/full_gradient_loader.svg" style="width: 50%" />
 
 - [full_gradient_loader.svg](output/full_gradient_loader.svg)
@@ -80,7 +80,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [full_gradient_white_16x16.png](output/full_gradient_white_16x16.png)
 
 ### full_gradient_white_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/full_gradient_white_loader.svg" style="width: 50%" />
 
 - [full_gradient_white_loader.svg](output/full_gradient_white_loader.svg)
@@ -107,7 +107,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [full_dark_16x16.png](output/full_dark_16x16.png)
 
 ### full_dark_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/full_dark_loader.svg" style="width: 50%" />
 
 - [full_dark_loader.svg](output/full_dark_loader.svg)
@@ -134,7 +134,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [full_dark_white_16x16.png](output/full_dark_white_16x16.png)
 
 ### full_dark_white_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/full_dark_white_loader.svg" style="width: 50%" />
 
 - [full_dark_white_loader.svg](output/full_dark_white_loader.svg)
@@ -161,7 +161,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [rounded_gradient_16x16.png](output/rounded_gradient_16x16.png)
 
 ### rounded_gradient_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/rounded_gradient_loader.svg" style="width: 50%" />
 
 - [rounded_gradient_loader.svg](output/rounded_gradient_loader.svg)
@@ -188,7 +188,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [rounded_gradient_white_16x16.png](output/rounded_gradient_white_16x16.png)
 
 ### rounded_gradient_white_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/rounded_gradient_white_loader.svg" style="width: 50%" />
 
 - [rounded_gradient_white_loader.svg](output/rounded_gradient_white_loader.svg)
@@ -215,7 +215,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [rounded_dark_16x16.png](output/rounded_dark_16x16.png)
 
 ### rounded_dark_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/rounded_dark_loader.svg" style="width: 50%" />
 
 - [rounded_dark_loader.svg](output/rounded_dark_loader.svg)
@@ -242,7 +242,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [rounded_dark_white_16x16.png](output/rounded_dark_white_16x16.png)
 
 ### rounded_dark_white_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/rounded_dark_white_loader.svg" style="width: 50%" />
 
 - [rounded_dark_white_loader.svg](output/rounded_dark_white_loader.svg)
@@ -269,7 +269,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [dumbbell_gradient_16x16.png](output/dumbbell_gradient_16x16.png)
 
 ### dumbbell_gradient_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/dumbbell_gradient_loader.svg" style="width: 50%" />
 
 - [dumbbell_gradient_loader.svg](output/dumbbell_gradient_loader.svg)
@@ -296,7 +296,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [dumbbell_dark_16x16.png](output/dumbbell_dark_16x16.png)
 
 ### dumbbell_dark_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/dumbbell_dark_loader.svg" style="width: 50%" />
 
 - [dumbbell_dark_loader.svg](output/dumbbell_dark_loader.svg)
@@ -323,7 +323,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [dumbbell_white_16x16.png](output/dumbbell_white_16x16.png)
 
 ### dumbbell_white_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/dumbbell_white_loader.svg" style="width: 50%" />
 
 - [dumbbell_white_loader.svg](output/dumbbell_white_loader.svg)
@@ -350,7 +350,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [dumbbell_gradient_tight_16x16.png](output/dumbbell_gradient_tight_16x16.png)
 
 ### dumbbell_gradient_tight_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/dumbbell_gradient_tight_loader.svg" style="width: 50%" />
 
 - [dumbbell_gradient_tight_loader.svg](output/dumbbell_gradient_tight_loader.svg)
@@ -377,7 +377,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [dumbbell_dark_tight_16x16.png](output/dumbbell_dark_tight_16x16.png)
 
 ### dumbbell_dark_tight_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/dumbbell_dark_tight_loader.svg" style="width: 50%" />
 
 - [dumbbell_dark_tight_loader.svg](output/dumbbell_dark_tight_loader.svg)
@@ -404,7 +404,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [dumbbell_white_tight_16x16.png](output/dumbbell_white_tight_16x16.png)
 
 ### dumbbell_white_tight_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/dumbbell_white_tight_loader.svg" style="width: 50%" />
 
 - [dumbbell_white_tight_loader.svg](output/dumbbell_white_tight_loader.svg)
@@ -431,7 +431,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [circle_gradient_16x16.png](output/circle_gradient_16x16.png)
 
 ### circle_gradient_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/circle_gradient_loader.svg" style="width: 50%" />
 
 - [circle_gradient_loader.svg](output/circle_gradient_loader.svg)
@@ -458,7 +458,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [circle_gradient_white_16x16.png](output/circle_gradient_white_16x16.png)
 
 ### circle_gradient_white_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/circle_gradient_white_loader.svg" style="width: 50%" />
 
 - [circle_gradient_white_loader.svg](output/circle_gradient_white_loader.svg)
@@ -485,7 +485,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [circle_dark_16x16.png](output/circle_dark_16x16.png)
 
 ### circle_dark_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/circle_dark_loader.svg" style="width: 50%" />
 
 - [circle_dark_loader.svg](output/circle_dark_loader.svg)
@@ -512,7 +512,7 @@ _Animated (pumping dumbbell) — open the SVG to see it move._
 - [circle_dark_white_16x16.png](output/circle_dark_white_16x16.png)
 
 ### circle_dark_white_loader
-_Animated (pumping dumbbell) — open the SVG to see it move._
+_Animated (pumping dumbbell): open the SVG to see it move._
 <img src="output/circle_dark_white_loader.svg" style="width: 50%" />
 
 - [circle_dark_white_loader.svg](output/circle_dark_white_loader.svg)

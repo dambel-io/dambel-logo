@@ -1,4 +1,4 @@
-# Local Claude Code state — machine-specific, never shared.
+# Local Claude Code state: machine-specific, never shared.
 # Kept here so it does not depend on the repo root or global gitignore.
 settings.local.json
 .credentials.json
